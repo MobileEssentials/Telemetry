@@ -1,0 +1,116 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "array",
+  "items": {
+    "id": "http://jsonschema.net/0",
+    "type": "object",
+    "properties": {
+      "EventName": {
+        "id": "http://jsonschema.net/0/EventName",
+        "type": "string"
+      },
+      "Count": {
+        "id": "http://jsonschema.net/0/Count",
+        "type": "integer"
+      },
+      "Metadata": {
+        "id": "http://jsonschema.net/0/Metadata",
+        "type": "object",
+        "properties": {
+          "Properties": {
+            "id": "http://jsonschema.net/0/Metadata/Properties",
+            "type": "array",
+            "items": {
+              "id": "http://jsonschema.net/0/Metadata/Properties/0",
+              "type": "object",
+              "properties": {
+                "Name": {
+                  "id": "http://jsonschema.net/0/Metadata/Properties/0/Name",
+                  "type": "string"
+                },
+                "Type": {
+                  "id": "http://jsonschema.net/0/Metadata/Properties/0/Type",
+                  "type": "string"
+                },
+                "Range": {
+                  "id": "http://jsonschema.net/0/Metadata/Properties/0/Range",
+                  "type": "object",
+                  "properties": {
+                    "MinValue": {
+                      "id": "http://jsonschema.net/0/Metadata/Properties/0/Range/MinValue",
+                      "type": "integer"
+                    },
+                    "MaxValue": {
+                      "id": "http://jsonschema.net/0/Metadata/Properties/0/Range/MaxValue",
+                      "type": "integer"
+                    }
+                  }
+                },
+                "Value": {
+                  "id": "http://jsonschema.net/0/Metadata/Properties/0/Value",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Name"
+              ]
+            },
+            "required": [
+              "0"
+            ]
+          },
+          "Metrics": {
+            "id": "http://jsonschema.net/0/Metadata/Metrics",
+            "type": "array",
+            "items": {
+              "id": "http://jsonschema.net/0/Metadata/Metrics/0",
+              "type": "object",
+              "properties": {
+                "Name": {
+                  "id": "http://jsonschema.net/0/Metadata/Metrics/0/Name",
+                  "type": "string"
+                },
+                "Range": {
+                  "id": "http://jsonschema.net/0/Metadata/Metrics/0/Range",
+                  "type": "object",
+                  "properties": {
+                    "MinValue": {
+                      "id": "http://jsonschema.net/0/Metadata/Metrics/0/Range/MinValue",
+                      "type": "integer"
+                    },
+                    "MaxValue": {
+                      "id": "http://jsonschema.net/0/Metadata/Metrics/0/Range/MaxValue",
+                      "type": "integer"
+                    }
+                  }
+                },
+                "Value": {
+                  "id": "http://jsonschema.net/0/Metadata/Metrics/0/Value",
+                  "type": "number"
+                }
+              },
+              "required": [
+                "Name"
+              ]
+            },
+            "required": [
+              "0"
+            ]
+          }
+        },
+        "required": [
+          "Properties"
+        ]
+      }
+    },
+    "required": [
+      "EventName",
+      "Count",
+      "Metadata"
+    ]
+  },
+  "required": [
+    "0"
+  ]
+}

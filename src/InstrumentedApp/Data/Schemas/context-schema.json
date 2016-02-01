@@ -1,0 +1,21 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "ContextProperties": {
+      "id": "http://jsonschema.net/ContextProperties",
+      "type": "object",
+      "properties": {}
+    },
+    "EventProperties": {
+      "id": "http://jsonschema.net/EventProperties",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "required": [
+    "ContextProperties",
+    "EventProperties"
+  ]
+}

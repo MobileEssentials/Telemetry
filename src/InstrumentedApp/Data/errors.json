@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Message": "Error building project",
+    "Data": {
+      "ErrorCode": "CS1045",
+      "Identifier": 15
+    }
+  },
+  {
+    "Type": "System.TimeoutException",
+    "Message": "Timeout building project",
+    "Data": {
+      "Elapsed": "3570"
+    }
+  },
+  {
+    "Type": "System.StackOverflowException",
+    "Message": "Stack overflow building project"
+  }
+]

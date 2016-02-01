@@ -1,0 +1,32 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "array",
+  "items": {
+    "id": "http://jsonschema.net/0",
+    "type": "object",
+    "properties": {
+      "Type": {
+        "id": "http://jsonschema.net/0/Type",
+        "type": "string"
+      },
+      "Message": {
+        "id": "http://jsonschema.net/0/Message",
+        "type": "string"
+      },
+      "Data": {
+        "id": "http://jsonschema.net/0/Data",
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "Message"
+    ]
+  },
+  "additionalItems": false,
+  "required": [
+    "0"
+  ]
+}

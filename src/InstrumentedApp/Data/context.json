@@ -1,0 +1,27 @@
+﻿{
+  "ContextProperties": {
+    "MachineName": "mag-MBP|joj-Surface|kzu-MBP",
+    "Company": "Xamarin"
+  },
+  "EventProperties": {
+    "UserId": "mag|kzu|joj|alo|jmt|vga|ema|joe",
+    "AccountId": "vsx@xamarin.com|dev@xamarin.com",
+    "License": "Indie|Business|Enterprise",
+    "ProjectCapabilities": [
+      "AssemblyReferences",
+      "NativeReferences",
+      "Xamarin",
+      "Xamarin.iOS",
+      "Xamarin.Android",
+      "Xamarin.Forms"
+    ],
+    "ProjectReferences": [
+      "System.Core",
+      "System.Reflection",
+      "System.Reactive",
+      "System.ComponentModel",
+      "System.ServiceModel"
+    ],
+    "Language": "C#|VB|F#"
+  }
+}

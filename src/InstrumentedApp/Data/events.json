@@ -1,0 +1,27 @@
+﻿[
+  {
+    "EventName": "ProjectBuilt",
+    "Count": 20,
+    "Metadata": {
+      "Properties": [
+        {
+          "Name": "ProjectId",
+          "Type": "System.Guid"
+        },
+        {
+          "Name": "Succeeded",
+          "Type": "System.Boolean"
+        }
+      ],
+      "Metrics": [
+        {
+          "Name": "Elapsed",
+          "Range": {
+            "MinValue": 1,
+            "MaxValue": 4
+          }
+        }
+      ]
+    }
+  }
+]

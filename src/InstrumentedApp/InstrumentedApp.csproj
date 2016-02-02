@@ -121,8 +121,10 @@
     <Compile Include="Data\Readers\IContextReader.cs" />
     <Compile Include="Data\Readers\IErrorsReader.cs" />
     <Compile Include="Data\Readers\IEventsReader.cs" />
+    <Compile Include="Enrichers\DeviceContextEnricher.cs" />
     <Compile Include="Enrichers\JsonDataContextEnricher.cs" />
     <Compile Include="Enrichers\JsonTelemetryEnricher.cs" />
+    <Compile Include="Enrichers\SessionContextEnricher.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Enrichers\TestContextEnricher.cs" />
     <Compile Include="Program.cs" />

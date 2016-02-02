@@ -18,12 +18,32 @@
 
 	public class ContextConstants
 	{
+		public readonly UserConstants User = new UserConstants();
+
+		public readonly DeviceConstants Device = new DeviceConstants();
+
+		public readonly string MachineName = "MachineName";
+
+		public readonly string Version = "Version";
+
+		public readonly string IpAddress = "IpAddress";
+	}
+
+	public class UserConstants
+	{
 		public readonly string UserId = "UserId";
 
 		public readonly string AccountId = "AccountId";
 
 		public readonly string SessionId = "SessionId";
+	}
 
-		public readonly string MachineName = "MachineName";
+	public class DeviceConstants
+	{
+		public readonly string DeviceId = "DeviceId";
+
+		public readonly string DeviceModel = "DeviceModel";
+
+		public readonly string OperatingSystem = "OperatingSystem";
 	}
 }

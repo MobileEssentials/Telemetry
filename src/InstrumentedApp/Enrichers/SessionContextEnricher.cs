@@ -5,11 +5,11 @@ using System.ComponentModel.Composition;
 namespace Xamarin.Ide.Telemetry.Enrichers
 {
 	[Export (typeof (IContextEnricher))]
-	public class TestContextEnricher : IContextEnricher
+	public class SessionContextEnricher : IContextEnricher
 	{
 		public void Enrich (IDictionary<string, string> properties)
 		{
-			properties.Add ("TestContextValue", Guid.NewGuid ().ToString ());
+			properties.Add (TelemetryConstants.Context.User.SessionId, Guid.NewGuid ().ToString ());
 		}
 	}
 }

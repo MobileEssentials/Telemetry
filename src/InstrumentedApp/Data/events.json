@@ -15,10 +15,57 @@
       ],
       "Metrics": [
         {
-          "Name": "Elapsed",
+          "Name": "BuildTimeMillisecs",
           "Range": {
-            "MinValue": 1,
-            "MaxValue": 4
+            "MinValue": 1000,
+            "MaxValue": 4500
+          }
+        }
+      ]
+    }
+  },
+  {
+    "EventName": "XMAAgentStarted",
+    "Count": 15,
+    "Metadata": {
+      "Properties": [
+        {
+          "Name": "AgentName",
+          "Type": "System.String",
+          "Value": "IDB|Designer|Build"
+        },
+        {
+          "Name": "Started",
+          "Type": "System.Boolean"
+        }
+      ],
+      "Metrics": [
+        {
+          "Name": "StartTimeMillisecs",
+          "Range": {
+            "MinValue": 500,
+            "MaxValue": 8750
+          }
+        }
+      ]
+    }
+  },
+  {
+    "EventName": "iOSDesignerLoad",
+    "Count": 10,
+    "Metadata": {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "Storyboard|XIB"
+        }
+      ],
+      "Metrics": [
+        {
+          "Name": "LoadTimeMillisecs",
+          "Range": {
+            "MinValue": 1500,
+            "MaxValue": 6400
           }
         }
       ]

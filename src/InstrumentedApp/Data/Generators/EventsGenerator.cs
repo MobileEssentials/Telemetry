@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using Xamarin.Ide.Telemetry.Data.Model;
 using Xamarin.Ide.Telemetry.Data.Readers;
+using System.Linq;
 
 namespace Xamarin.Ide.Telemetry.Data.Generators
 {
@@ -72,7 +73,7 @@ namespace Xamarin.Ide.Telemetry.Data.Generators
 				var name = property.Name;
 				var value = property.Value;
 
-				var type = Type.GetType(property.Type, throwOnError: false, ignoreCase: true);
+				var type = property.Type == null ? null : Type.GetType(property.Type, throwOnError: false, ignoreCase: true);
 
 				if (string.IsNullOrEmpty (value) && type == null) {
 					continue;
@@ -80,6 +81,12 @@ namespace Xamarin.Ide.Telemetry.Data.Generators
 
 				if (string.IsNullOrEmpty(value)) {
 					value = GetValue (type, property.Range);
+				}
+
+				if (value.Contains ("|")) {
+					var options = value.Split(new string[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
+
+					value = options[random.Next (0, options.Count () - 1)].Trim();
 				}
 
 				result.Add (name, value);
@@ -94,7 +101,7 @@ namespace Xamarin.Ide.Telemetry.Data.Generators
 			var metrics = metadata.Metadata?.Metrics;
 
 			foreach(var metric in metrics) {
-				var name = metric.Name;
+				var name = string.Format("{0}.{1}", metadata.EventName, metric.Name);
 				var value = metric.Value;
 
 				if(value < 1) {

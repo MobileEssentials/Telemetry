@@ -14,7 +14,11 @@
     }
   },
   {
-    "Type": "System.StackOverflowException",
-    "Message": "Stack overflow building project"
+    "Type": "System.ApplicationException",
+    "Message": "Unexpected error starting XMA Agent"
+  },
+  {
+    "Type": "System.ArgumentException",
+    "Message": "Error loading designer pane"
   }
 ]

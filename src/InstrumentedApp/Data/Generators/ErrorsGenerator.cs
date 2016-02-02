@@ -35,7 +35,13 @@ namespace Xamarin.Ide.Telemetry.Data.Generators
 					exception.Data.Add (dataItem.Key, dataItem.Value);
 				}
 
-				errors.Add (new TelemetryError (exception));
+				try {
+					//Hack to get a minimum stack trace to upload to insights
+					throw exception;
+				} catch(Exception ex) {
+					errors.Add (new TelemetryError (ex));
+				}
+				
 			}
 
 			return errors;

@@ -67,6 +67,7 @@ namespace Xamarin.Ide
 		static void TraceEvents(CompositionContainer container)
 		{
 			var events = container.GetExportedValue<IEventStream>();
+
 			events.Of<object> ().Subscribe (e => Console.WriteLine (JsonConvert.SerializeObject(e)));
 		}
 	}

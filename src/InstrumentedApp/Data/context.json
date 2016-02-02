@@ -1,20 +1,14 @@
 ﻿{
   "ContextProperties": {
     "MachineName": "mag-MBP|joj-Surface|kzu-MBP",
-    "Company": "Xamarin"
+    "Company": "Xamarin",
+    "Version":  "99.0.0.1199"
   },
   "EventProperties": {
     "UserId": "mag|kzu|joj|alo|jmt|vga|ema|joe",
     "AccountId": "vsx@xamarin.com|dev@xamarin.com",
     "License": "Indie|Business|Enterprise",
-    "ProjectCapabilities": [
-      "AssemblyReferences",
-      "NativeReferences",
-      "Xamarin",
-      "Xamarin.iOS",
-      "Xamarin.Android",
-      "Xamarin.Forms"
-    ],
+    "ProjectType": "MasterDetail|Metal|Tabbed|SpriteKit|SceneKit|WatchKit|tvOS",
     "ProjectReferences": [
       "System.Core",
       "System.Reflection",
